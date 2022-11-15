@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestSystem</string>
+    <string name="test_name">Тест на тему:</string>
+    <string name="num_quest">Вопрос №</string>
+    <string name="text_quest">Текст вопроса</string>
+    <string name="send">Отправить</string>
+</resources>
