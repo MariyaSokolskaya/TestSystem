@@ -1,7 +1,24 @@
 <resources>
     <string name="app_name">TestSystem</string>
-    <string name="test_name">Тест на тему:</string>
+    <string name="test_name">Тест на тему: каскадные таблицы стилей</string>
     <string name="num_quest">Вопрос №</string>
     <string name="text_quest">Текст вопроса</string>
     <string name="send">Отправить</string>
+    <string-array name="test">
+        <item>Как выбрать селектор по id?</item>
+        <item>.greeting {}</item>
+        <item>#greeting {} +</item>
+        <item>id:greeting {}</item>
+        <item>id=greeting {}</item>
+        <item>Как задать стили всем элементам span с классом about?</item>
+        <item>.about span {}</item>
+        <item>span .about {}</item>
+        <item>.about {}</item>
+        <item>span.about {} +</item>
+        <item>Выберите псевдокласс который определяет стиль элемента при наведении на него курсора мыши</item>
+        <item>:active</item>
+        <item>:mousover</item>
+        <item>:hover +</item>
+        <item>:visited</item>
+    </string-array>
 </resources>
