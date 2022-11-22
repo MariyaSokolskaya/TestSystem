@@ -1,9 +1,13 @@
 package com.example.testsystem;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -76,5 +80,27 @@ public class MainActivity extends AppCompatActivity {
         }else {
             //TODO показать результаты
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        super.onOptionsItemSelected(item);
+        switch (item.getItemId()){
+            case R.id.about:
+                Intent intent = new Intent(MainActivity.this,
+                        AboutActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.exit:
+                //TODO что делать при выборе exit
+        }
+        return  true;
     }
 }

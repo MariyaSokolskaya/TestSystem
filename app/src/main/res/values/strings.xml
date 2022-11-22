@@ -4,6 +4,24 @@
     <string name="num_quest">Вопрос №</string>
     <string name="text_quest">Текст вопроса</string>
     <string name="send">Отправить</string>
+    <string name="load">Загрузка...</string>
+    <string name="about_item">О программе</string>
+    <string name="exit_item">Выход</string>
+    <string name="about_text">
+        <b>Меня зовут</b>\n
+        <b>Версия программы</b>\n
+        <i>Спасибо тем, кто...</i>\n
+        Android Studio Chipmunk | 2021.2.1
+Build #AI-212.5712.43.2112.8512546, built on April 29, 2022
+Runtime version: 11.0.12+7-b1504.28-7817840 amd64
+VM: OpenJDK 64-Bit Server VM by Oracle Corporation
+Windows 10 10.0
+GC: G1 Young Generation, G1 Old Generation
+Memory: 1280M
+Cores: 8
+Registry: external.system.auto.import.disabled=true
+
+    </string>
     <string-array name="test">
         <item>Как выбрать селектор по id?</item>
         <item>.greeting {}</item>
