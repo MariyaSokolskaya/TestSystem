@@ -8,7 +8,36 @@
     tools:context=".AboutActivity">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fon_text"
+            android:gravity="center_horizontal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#C7D8EA"
+                android:onClick="sendColor"
+                android:id="@+id/color1"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#A8CCAC"
+                android:onClick="sendColor"
+                android:id="@+id/color2"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#F3E0B2"
+                android:onClick="sendColor"
+                android:id="@+id/color3"/>
+        </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

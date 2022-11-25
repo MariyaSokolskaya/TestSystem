@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     Resources resources;//для обращения к ресурсам
     String [] test;
     int countQuest = 1;
+    public static final String MY_KEY_COLOR = "my color";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,5 +105,25 @@ public class MainActivity extends AppCompatActivity {
                 //TODO что делать при выборе exit
         }
         return  true;
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        int color = getIntent().getIntExtra(MY_KEY_COLOR, 0);
+        LinearLayout layout = findViewById(R.id.background_color);
+        switch (color){
+            case 1:
+                layout.setBackgroundColor(Color.rgb(199, 216, 234));
+                break;
+            case 2:
+                layout.setBackgroundColor(Color.parseColor("#A8CCAC"));
+                break;
+            case 3:
+                layout.setBackgroundColor(Color.parseColor("#F3E0B2"));
+
+
+        }
+
     }
 }
